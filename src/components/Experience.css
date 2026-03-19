@@ -1,0 +1,205 @@
+/* ============================================
+   EXPERIENCE SECTION
+============================================ */
+
+.experience {
+  background-color: var(--bg-secondary);
+  padding: var(--space-32) 0;
+}
+
+.experience__header-row {
+  margin-bottom: var(--space-16);
+  margin-top: var(--space-6);
+}
+
+.experience__heading {
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-3xl), 4vw, var(--text-4xl));
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+/* ---- TIMELINE ---- */
+.experience__timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 860px;
+}
+
+.experience__entry {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: var(--space-6);
+  position: relative;
+}
+
+/* ---- LINE COLUMN ---- */
+.experience__line-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var(--space-6);
+}
+
+.experience__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  border: 2px solid var(--bg-secondary);
+  box-shadow: 0 0 0 2px var(--accent);
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.experience__connector {
+  width: 1px;
+  flex: 1;
+  background-color: var(--bg-tertiary);
+  margin-top: var(--space-2);
+  min-height: var(--space-8);
+}
+
+/* ---- CARD ---- */
+.experience__card {
+  background-color: var(--bg-primary);
+  border: var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-8);
+  margin-bottom: var(--space-6);
+  transition: border-color var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.experience__card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+}
+
+.experience__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
+  border-bottom: var(--border-light);
+}
+
+.experience__card-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.experience__role {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.experience__company-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.experience__company {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.experience__sep {
+  color: var(--text-tertiary);
+}
+
+.experience__location {
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+}
+
+.experience__card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+.experience__period {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+
+/* ---- BADGES ---- */
+.experience__badge {
+  padding: 3px var(--space-3);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: var(--radius-full);
+}
+
+.experience__badge--nysc {
+  background-color: rgba(22, 163, 74, 0.12);
+  color: var(--success);
+  border: 1px solid rgba(22, 163, 74, 0.3);
+}
+
+.experience__badge--siwes {
+  background-color: var(--accent-light);
+  color: var(--accent);
+  border: 1px solid rgba(79, 107, 237, 0.3);
+}
+
+/* ---- BULLETS ---- */
+.experience__bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.experience__bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.experience__bullet-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 9px;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 640px) {
+  .experience__card-header {
+    flex-direction: column;
+  }
+
+  .experience__card-right {
+    align-items: flex-start;
+  }
+
+  .experience__entry {
+    grid-template-columns: 24px 1fr;
+    gap: var(--space-4);
+  }
+}

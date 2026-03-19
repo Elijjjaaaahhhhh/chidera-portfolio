@@ -1,0 +1,115 @@
+/* ============================================
+   CHIDERA IBEH PORTFOLIO — DESIGN TOKENS
+   Every visual decision lives here.
+   Change a value here, it changes everywhere.
+============================================ */
+
+:root {
+
+  /* ---- COLOURS — LIGHT MODE ---- */
+  --bg-primary:        #e5e4de;
+  --bg-secondary:      #FAFAF7;
+  --bg-tertiary:       #9e9e9d;
+  --bg-dark:           #0F1117;   /* dark sections (footer, challenge blocks) */
+  --bg-dark-secondary: #1A1D26;   /* slightly lighter dark — dark cards */
+
+  --text-primary:   #0F1117;   /* main body text — dark navy */
+  --text-secondary: #4A4A5A;   /* supporting text — slightly muted */
+  --text-tertiary:  #8A8A9A;   /* labels, captions */
+  --text-inverse:   #FAFAF7;   /* text on dark backgrounds */
+
+  --accent:         #4F6BED;   /* slate blue — THE accent colour */
+  --accent-hover:   #3A54D4;   /* darker on hover */
+  --accent-light:   #EEF1FD;   /* very light tint — badge backgrounds */
+  --accent-muted:   #8FA3F4;   /* lighter accent for dark backgrounds */
+
+  --success:  #16A34A;   /* green — results sections */
+  --success-bg: #F0FDF4;
+  --warning:  #B45309;   /* amber — stress indicators */
+  --danger:   #DC2626;   /* red — challenge blocks */
+  --danger-bg: #FFF5F5;
+
+  /* ---- TYPOGRAPHY ---- */
+  --font-display: 'Syne', sans-serif;       /* headings — geometric, strong */
+  --font-body:    'DM Sans', sans-serif;    /* body text — clean, readable */
+  --font-mono:    'JetBrains Mono', monospace; /* numbers, metrics, code */
+
+  /* ---- FONT SIZES — fluid scale ---- */
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.25rem;    /* 20px */
+  --text-2xl:  1.5rem;     /* 24px */
+  --text-3xl:  2rem;       /* 32px */
+  --text-4xl:  2.5rem;     /* 40px */
+  --text-5xl:  3.5rem;     /* 56px */
+  --text-6xl:  5rem;       /* 80px — hero name */
+
+  /* ---- SPACING ---- */
+  --space-1:  0.25rem;   /*  4px */
+  --space-2:  0.5rem;    /*  8px */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-24: 6rem;      /* 96px */
+  --space-32: 8rem;      /* 128px */
+
+  /* ---- LAYOUT ---- */
+  --max-width:        1200px;   /* maximum content width */
+  --section-padding:  var(--space-24) var(--space-6);  /* top/bottom left/right */
+
+  /* ---- BORDERS ---- */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  12px;
+  --radius-xl:  20px;
+  --radius-full: 9999px;   /* pill shape */
+
+  --border-light:  1px solid var(--bg-tertiary);
+  --border-accent: 1px solid var(--accent);
+
+  /* ---- SHADOWS ---- */
+  --shadow-sm: 0 1px 3px rgba(15, 17, 23, 0.06);
+  --shadow-md: 0 4px 16px rgba(15, 17, 23, 0.08);
+  --shadow-lg: 0 8px 32px rgba(15, 17, 23, 0.12);
+
+  /* ---- TRANSITIONS ---- */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+
+  /* ---- Z-INDEX SCALE ---- */
+  --z-base:     1;
+  --z-navbar:   100;
+  --z-cursor:   999;
+  --z-overlay:  200;
+}
+
+/* ============================================
+   DARK MODE — overrides only what changes
+============================================ */
+[data-theme="dark"] {
+  --bg-primary:        #0F1117;
+  --bg-secondary:      #1A1D26;
+  --bg-tertiary:       #252836;
+  --bg-dark:           #070809;
+  --bg-dark-secondary: #0F1117;
+
+  --text-primary:   #FAFAF7;
+  --text-secondary: #B0B0C0;
+  --text-tertiary:  #6A6A7A;
+  --text-inverse:   #0F1117;
+
+  --accent:       #6B84F0;
+  --accent-hover: #8FA3F4;
+  --accent-light: #1A2040;
+  --accent-muted: #4F6BED;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
