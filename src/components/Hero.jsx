@@ -91,10 +91,7 @@ export default function Hero() {
             />
           </div>
           {/* Floating accent card */}
-          <div className="hero__float-card">
-            <span className="hero__float-value">4.12</span>
-            <span className="hero__float-label">GPA · Covenant University</span>
-          </div>
+          
         </div>
 
       </div>
